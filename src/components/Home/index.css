@@ -1,0 +1,153 @@
+
+.home-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home-container.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  background-color: inherit;
+  color: inherit;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.sort-buttons button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 5px;
+  color: inherit;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-container.dark-mode .user-card {
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.user-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-email,
+.user-city {
+  font-size: 14px;
+  color: #555;
+}
+
+.home-container.dark-mode .user-email,
+.home-container.dark-mode .user-city {
+  color: #bbb;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button.active-page {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination button:hover {
+  background-color: #e0e0e0;
+}
+
+.home-container.dark-mode .pagination button {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.home-container.dark-mode .pagination button.active-page {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.not-found {
+  text-align: center;
+  color: #999;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+}

@@ -1,0 +1,64 @@
+
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.user-details-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+.user-details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.back-button {
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: var(--button-text-color);
+  background-color: var(--button-background-color);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: var(--button-hover-background-color);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --button-background-color: #333333;
+  --button-text-color: #ffffff;
+  --button-hover-background-color: #444444;
+}
+
+
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #000000;
+  --button-background-color: #ffffff;
+  --button-text-color: #000000;
+  --button-hover-background-color: #e0e0e0;
+}
